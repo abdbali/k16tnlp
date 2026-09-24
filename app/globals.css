@@ -1,0 +1,59 @@
+:root {
+  color-scheme: light;
+}
+
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: Inter, system-ui, Arial, sans-serif;
+  background: #f4f6fb;
+  color: #111827;
+}
+
+.page {
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr 1fr;
+  gap: 16px;
+}
+
+.card {
+  background: white;
+  border-radius: 16px;
+  padding: 16px;
+  box-shadow: 0 8px 24px rgba(17, 24, 39, 0.08);
+}
+
+h1,h2,h3 { margin-top: 0; }
+img { width: 100%; border-radius: 12px; border: 1px solid #e5e7eb; }
+textarea {
+  width: 100%;
+  min-height: 280px;
+  border-radius: 12px;
+  border: 1px solid #d1d5db;
+  padding: 12px;
+  font-size: 15px;
+  resize: vertical;
+}
+button {
+  margin-top: 12px;
+  width: 100%;
+  padding: 12px;
+  border: 0;
+  border-radius: 12px;
+  background: #2563eb;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+button:disabled { opacity: 0.7; cursor: not-allowed; }
+.result { margin-top: 10px; padding: 10px; border: 1px solid #e5e7eb; border-radius: 12px; background: #f9fafb; }
+.small { font-size: 13px; color: #4b5563; }
+
+@media (max-width: 1080px) {
+  .grid { grid-template-columns: 1fr; }
+}
